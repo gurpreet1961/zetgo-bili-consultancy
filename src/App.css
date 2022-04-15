@@ -1,38 +1,184 @@
-.App {
-  text-align: center;
+body {
+  background-color: #f8fafd;
+  overflow-x: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*-------------------------------NavBar CSS------------------------------------------*/
+nav {
+  height: 88.84px;
+  background-color: #ffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logoName {
+  width: 113px;
+  height: 42px;
+  font-family: "Nexa Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 42px;
+  color: #315680;
+  margin-left: 1rem;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.leftNav {
+  padding: 2rem;
+  display: flex;
+}
+.rightNav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+.logo {
+  width: 4rem;
+}
+/*-----------------------------------NavBar CSS end-----------------------------------------*/
+/*-----------------------------------Container CSS-----------------------------------------*/
+.container {
+  /* width: 96vw; */
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: 2rem;
+}
+.container > h1 {
+  width: 96%;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 90px;
+  color: #000000;
+}
+.container > p {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34px;
+  height: auto;
+  width: 94%;
+  padding: 0 0 0 34px;
+  background: linear-gradient(to right, #315680, #315680) 0 5px/6px 100%
+    no-repeat;
+}
+.card {
+  width: 88vw;
+  background: #ffffff;
+  box-shadow: 0px 2px 30px rgba(44, 60, 74, 0.08);
+  border-radius: 8px;
+  padding: 4rem;
+}
+.input-container input {
+  border: none;
+  box-sizing: border-box;
+  outline: 0;
+  padding: 0.75rem;
+  position: relative;
+  width: 100%;
+}
+input {
+  z-index: 1;
+  background-color: transparent;
+  width: 80%;
+  border: none;
+  outline: none;
+  border-bottom: 1.5px solid rgb(206, 205, 205);
+}
+.datepick {
+  display: flex;
 }
 
-.App-link {
-  color: #61dafb;
+input[type="date"]::-webkit-calendar-picker-indicator {
+  background: transparent;
+  color: transparent;
+  cursor: pointer;
+  height: auto;
+  width: auto;
+}
+.material-icons-outlined {
+  margin-left: -1rem !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cardUpper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.checkin {
+  width: 40%;
+}
+.checkout {
+  width: 40%;
+}
+.cardlower {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 88vw;
+  position: relative;
+}
+.btnSearch {
+  margin-top: 2rem;
+  width: 80%;
+  height: 52.58px;
+  outline: none;
+  border: none;
+  color: #fff;
+  background: #315680;
+  border-radius: 8px;
+}
+.guestExpand {
+  position: absolute;
+  top: 7rem;
+  background: #ffffff;
+  box-shadow: 0px 2px 30px rgba(44, 60, 74, 0.08);
+  border-radius: 8px;
+  width: 18rem;
+  padding: 1rem;
+}
+.guestExpandnone {
+  display: none;
+}
+.guestExpand > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.adds {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 25%;
+}
+.adds > span {
+  margin: 0 10px 0 10px;
+}
+
+.minus {
+  padding: 0.3rem 0.6rem;
+  background: #ffffff;
+  border: 1px solid #315680;
+  box-sizing: border-box;
+  border-radius: 6px;
+  cursor: pointer;
+  z-index: 2;
+}
+.add {
+  padding: 0.3rem 0.5rem;
+  background: #ffffff;
+  border: 1px solid #315680;
+  box-sizing: border-box;
+  border-radius: 6px;
+  cursor: pointer;
+  z-index: 2;
+}
+.guest {
+  border-bottom: 1.5px solid rgb(206, 205, 205);
+  width: 32%;
+}
+.btnDiv {
+  width: 40%;
 }
